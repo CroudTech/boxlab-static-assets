@@ -1,0 +1,326 @@
+{
+  "/":{
+    "name":"home",
+    "title":"Home",
+    "colour":"#f4c91b",
+    "meta":{
+      "pageTitle": "Edgesite - Website build with Cloudflare Workers",
+      "metaDescription": "This light microsite has been build using server-siede JavaScript and Cloudflare Workers 🤖. The only external resources are images, fonts and a JSON data-feed.",
+      "path":"/"
+    },
+    "sections":[
+      {
+        "id":"introduction",
+        "class": "intro",
+        "heading":{
+          "type":"h1",
+          "hidden":true,
+          "content":"Homepage"
+        },
+        "content": "Hello, I am a website created with only Cloudflare workers and a JSON file on Github."
+      },{
+        "id":"aim",
+        "class": "textContent",
+        "heading":{
+          "type":"h2",
+          "hidden":true,
+          "content":"Aim"
+        },
+        "content": "The aim of this project is to highlight how a very simple website can be made with a file containing the data (for sections and pages) and a serverless-framework provided by Cloudflare Workers. The pages should be: isomorphic, search engine friendly, fast and provide all the content needed."
+      },{
+        "id":"process",
+        "class":"cardsContent",
+        "heading":{
+          "type":"h2",
+          "hidden":true,
+          "content":"Process"
+        },
+        "items":[
+          {
+            "type":"image",
+            "title":"Github",
+            "background":"#f94144",
+            "content":"The data file is hosted on Github.",
+            "image":"<svg aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512'><path fill='currentColor' d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z'></path></svg>"
+          },{
+            "type":"image",
+            "title":"Cloudflare",
+            "background":"#f3722c",
+            "content":"A Cloudflare Worker (Webpack) uses the JSON file to populate the pages and create the HTML.",
+            "image":"<svg aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='currentColor' d='M407.906,319.913l-230.8-2.928a4.58,4.58,0,0,1-3.632-1.926,4.648,4.648,0,0,1-.494-4.147,6.143,6.143,0,0,1,5.361-4.076L411.281,303.9c27.631-1.26,57.546-23.574,68.022-50.784l13.286-34.542a7.944,7.944,0,0,0,.524-2.936,7.735,7.735,0,0,0-.164-1.631A151.91,151.91,0,0,0,201.257,198.4,68.12,68.12,0,0,0,94.2,269.59C41.924,271.106,0,313.728,0,366.12a96.054,96.054,0,0,0,1.029,13.958,4.508,4.508,0,0,0,4.445,3.871l426.1.051c.043,0,.08-.019.122-.02a5.606,5.606,0,0,0,5.271-4l3.273-11.265c3.9-13.4,2.448-25.8-4.1-34.9C430.124,325.423,420.09,320.487,407.906,319.913ZM513.856,221.1c-2.141,0-4.271.062-6.391.164a3.771,3.771,0,0,0-3.324,2.653l-9.077,31.193c-3.9,13.4-2.449,25.786,4.1,34.89,6.02,8.4,16.054,13.323,28.238,13.9l49.2,2.939a4.491,4.491,0,0,1,3.51,1.894,4.64,4.64,0,0,1,.514,4.169,6.153,6.153,0,0,1-5.351,4.075l-51.125,2.939c-27.754,1.27-57.669,23.574-68.145,50.784l-3.695,9.606a2.716,2.716,0,0,0,2.427,3.68c.046,0,.088.017.136.017h175.91a4.69,4.69,0,0,0,4.539-3.37,124.807,124.807,0,0,0,4.682-34C640,277.3,583.524,221.1,513.856,221.1Z'></path></svg>"
+          },{
+            "type":"image",
+            "title":"Worker",
+            "background":"#f8961e",
+            "content":"A Web Worker will ensure that the site becomes a Single Page Application (SPA).",
+            "image":"<svg aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='currentColor' d='M32,224H64V416H32A31.96166,31.96166,0,0,1,0,384V256A31.96166,31.96166,0,0,1,32,224Zm512-48V448a64.06328,64.06328,0,0,1-64,64H160a64.06328,64.06328,0,0,1-64-64V176a79.974,79.974,0,0,1,80-80H288V32a32,32,0,0,1,64,0V96H464A79.974,79.974,0,0,1,544,176ZM264,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,264,256Zm-8,128H192v32h64Zm96,0H288v32h64ZM456,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,456,256Zm-8,128H384v32h64ZM640,256V384a31.96166,31.96166,0,0,1-32,32H576V224h32A31.96166,31.96166,0,0,1,640,256Z'></path></svg>"
+          }
+        ]
+      }
+    ]
+  },
+  "/technology-used":{
+    "name":"technology-used",
+    "title":"Technology used",
+    "colour":"#90be6d",
+    "meta":{
+      "pageTitle": "Technology used | Edgesite",
+      "metaDescription": "The technology used to create this mico-application. There is really not much, and it is completely server-less!",
+      "path":"/technology-used"
+    },
+    "sections":[
+      {
+        "id":"introduction",
+        "class": "intro",
+        "heading":{
+          "type":"h1",
+          "hidden":false,
+          "content":"Technology used"
+        },
+        "content": "It looks good underneath the hood."
+      },{
+        "id":"overview",
+        "class": "textContent",
+        "heading":{
+          "type":"h2",
+          "hidden":true,
+          "content":"Overview"
+        },
+        "content": "The data is stored within a GitHub repo, while the application is driven by Cloudflare Workers. Finally, your browser will provide the required libraries and functionality for the Single Page Application (SPA) experience. The beauty of it all is, the microsite is also a Progressive Web App (PWA), which means that it continues to work offline too."
+      },{
+        "id":"process",
+        "class":"bannerCardsContent",
+        "heading":{
+          "type":"h2",
+          "hidden":true,
+          "content":"Process"
+        },
+        "items":[
+          {
+            "type":"image",
+            "title":"Github",
+            "background":"#90be6d",
+            "content":"Github hosts the  service worker and adatafile that features all the content, sections and some configurations such as colours. This file is publicly available and users with access can edit and re-commit the file. The Service Worker will turn the application in a Progressive Web Application (PWA)",
+            "readMore":true,
+            "readMoreText":"The solemn aim of the datafile is to emimic an external data source, simialr to a detached CMS. The file we use is in JSON format and drives the content and type of sections (layout) of the pages. The purpose is to deliver the content in a machine readable way that is quick, safe and easy to digest. The service worker will provide the browser with further caching and loading instructions. Having this file on GitHub means that the file can adjusted and evolve over time from an external source without code changes to the Cloudflare Worker.",
+            "image":"<svg aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512'><path fill='currentColor' d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z'></path></svg>"
+          },{
+            "type":"image",
+            "title":"Cloudflare",
+            "background":"#43aa8b",
+            "content":"A Cloudflare Worker (Webpack) uses the JSON file to populate the pages and create the HTML.",
+            "readMore":true,
+            "readMoreText":"The Cloudflare Worker utilises the JSON file to review whether the requested page exists and what the content is. As there is no detached CMS in the background, there is some routing functionality at play, ensuring that the right content and status codes are provided to the user-agent. The duty of the Cloudflare Worker is to route the requested page to the right content and show the content; using the appropriate layouts and colours. The information is fully driven by the JSON file on GitHub, while the Cloudflare Worker is purely functional.",
+            "image":"<svg aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='currentColor' d='M407.906,319.913l-230.8-2.928a4.58,4.58,0,0,1-3.632-1.926,4.648,4.648,0,0,1-.494-4.147,6.143,6.143,0,0,1,5.361-4.076L411.281,303.9c27.631-1.26,57.546-23.574,68.022-50.784l13.286-34.542a7.944,7.944,0,0,0,.524-2.936,7.735,7.735,0,0,0-.164-1.631A151.91,151.91,0,0,0,201.257,198.4,68.12,68.12,0,0,0,94.2,269.59C41.924,271.106,0,313.728,0,366.12a96.054,96.054,0,0,0,1.029,13.958,4.508,4.508,0,0,0,4.445,3.871l426.1.051c.043,0,.08-.019.122-.02a5.606,5.606,0,0,0,5.271-4l3.273-11.265c3.9-13.4,2.448-25.8-4.1-34.9C430.124,325.423,420.09,320.487,407.906,319.913ZM513.856,221.1c-2.141,0-4.271.062-6.391.164a3.771,3.771,0,0,0-3.324,2.653l-9.077,31.193c-3.9,13.4-2.449,25.786,4.1,34.89,6.02,8.4,16.054,13.323,28.238,13.9l49.2,2.939a4.491,4.491,0,0,1,3.51,1.894,4.64,4.64,0,0,1,.514,4.169,6.153,6.153,0,0,1-5.351,4.075l-51.125,2.939c-27.754,1.27-57.669,23.574-68.145,50.784l-3.695,9.606a2.716,2.716,0,0,0,2.427,3.68c.046,0,.088.017.136.017h175.91a4.69,4.69,0,0,0,4.539-3.37,124.807,124.807,0,0,0,4.682-34C640,277.3,583.524,221.1,513.856,221.1Z'></path></svg>"
+          },{
+            "type":"image",
+            "title":"Worker",
+            "background":"#5682ab",
+            "content":"A Web Worker will ensure that the site becomes a Single Page Application (SPA).",
+            "readMore":true,
+            "readMoreText":"To really review the extend of opportunities with this project, it will have a Single Page Application feeling over it. We will be using Web Workers to ensure that the main thread occupancy is reduced while a Service Worker will allow static and indefinite caching of all resources. Ultimately resulting in a fast and seamless user-experience with offline capabilities. No external resources will be provided, and the Cloudflare Worker will provide a Service Worker file on demand.",
+            "image":"<svg aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path fill='currentColor' d='M32,224H64V416H32A31.96166,31.96166,0,0,1,0,384V256A31.96166,31.96166,0,0,1,32,224Zm512-48V448a64.06328,64.06328,0,0,1-64,64H160a64.06328,64.06328,0,0,1-64-64V176a79.974,79.974,0,0,1,80-80H288V32a32,32,0,0,1,64,0V96H464A79.974,79.974,0,0,1,544,176ZM264,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,264,256Zm-8,128H192v32h64Zm96,0H288v32h64ZM456,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,456,256Zm-8,128H384v32h64ZM640,256V384a31.96166,31.96166,0,0,1-32,32H576V224h32A31.96166,31.96166,0,0,1,640,256Z'></path></svg>"
+          }
+        ]
+      }
+    ]
+  },
+  "/goals-and-results":{
+    "name":"goals-results",
+    "title":"Goals & Results",
+    "colour":"#f8961e",
+    "meta":{
+      "pageTitle": "Goals &amp; Results | Edgesite",
+      "metaDescription": "The goals set for the project and the results associated. Let's see whether the project works as intended!",
+      "path":"/goals-and-results"
+    },
+    "sections":[
+      {
+        "id":"introduction",
+        "class": "intro",
+        "heading":{
+          "type":"h1",
+          "hidden":false,
+          "content":"Goals and Results"
+        },
+        "content": "Measuring success of the test"
+      },{
+        "id":"pages",
+        "class": "tableContent",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"Pages"
+        },
+        "content": "The objectives put in place for the pages.",
+        "table":{
+          "theadColour":"#f4c91b",
+          "thead":[
+            "Objective",
+            "Outcome"
+          ],
+          "tbody":[
+            ["All pages serve 200-OK status code","<span class=\"pass\">Pass</span>"],
+            ["Pages can be crawled","<span class=\"pass\">Pass</span>"],
+            ["Not found page shown","<span class=\"fail\">Fail</span>"],
+            ["Not found page serves 404-Not Found status code","<span class=\"fail\">Fail</span>"]
+          ]
+        }
+      },{
+        "id":"resources",
+        "class": "tableContent",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"Resources"
+        },
+        "content": "The objectives put in place for the resources.",
+        "table":{
+          "theadColour":"#90be6d",
+          "thead":[
+            "Objective",
+            "Outcome"
+          ],
+          "tbody":[
+            ["Robots.txt returns 200-OK","<span class=\"pass\">Pass</span>"],
+            ["Robots.txt is <code>plain/text; UTF-8</code>","<span class=\"pass\">Pass</span>"],
+            ["XML sitemap is <code>text/xml; UTF-8</code>","<span class=\"pass\">Pass</span>"],
+            ["Service Worker returns 200-OK","<span class=\"pass\">Pass</span>"],
+            ["Service Worker is <code>application/javascript; UTF-8</code>","<span class=\"pass\">Pas</span>"]
+          ]
+        }
+      },{
+        "id":"functionality",
+        "class": "tableContent",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"Functionality"
+        },
+        "content": "The objectives put in place for the functionality.",
+        "table":{
+          "theadColour":"#43aa8b",
+          "thead":[
+            "Objective",
+            "Outcome"
+          ],
+          "tbody":[
+            ["Service Worker is installed","<span class=\"pas\">Pass</span>"],
+            ["App works offline","<span class=\"pas\">Pass</span>"],
+            ["App is SPA","<span class=\"pas\">Pass</span>"]
+          ]
+        }
+      },{
+        "id":"scoring",
+        "class": "tableContent",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"Assessment"
+        },
+        "content": "Using Lighthouse, we want these pages to score 95+ as overall score for the various categories. The page load speed (performance) will be measured by Page Speed Insights, while the other categories will be measured using Chrome DevTools Lighthouse. The  tests are done on all pages",
+        "table":{
+          "theadColour":"#5682ab",
+          "thead":[
+            "Category",
+            "Score"
+          ],
+          "tbody":[
+            ["Performance","<span class=\"pass\">99</span>"],
+            ["Progressive Web App (PWA)","<span class=\"pass\">14 / 14</span>"],
+            ["Best practices","<span class=\"pass\">100</span>"],
+            ["Accessibility (a11y)","<span class=\"pass\">100</span>"],
+            ["SEO","<span class=\"pass\">100</span>"],
+            ["W3c Validator: Errors","<span class=\"pass\">0</span>"],
+            ["W3c Validator: Warnings","<span class=\"pass\">0</span>"]
+          ]
+        }
+      }
+    ]
+  },
+  "/about":{
+    "name":"about",
+    "title":"About",
+    "colour":"#f3722c",
+    "meta":{
+      "pageTitle": "About the project | Edgesite",
+      "metaDescription": "Find out more about the project and the person behind the screen.",
+      "path":"/about"
+    },
+    "sections":[
+      {
+        "id":"introduction",
+        "class": "intro",
+        "heading":{
+          "type":"h1",
+          "hidden":false,
+          "content":"About"
+        },
+        "content": "The reason why this project exists"
+      },{
+        "id":"purpose",
+        "class": "textContent",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"Purpose"
+        },
+        "content": "The aim of this project is to highlight how a very simple website can be made with a file containing the data (for sections and pages) and a serverless-framework provided by Cloudflare Workers. The pages should be: isomorphic, search engine friendly, fast and provide all the content needed."
+      },{
+        "id":"person-behind-screen",
+        "class": "textContent",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"The person behind the screen"
+        },
+        "content": "This project is the brainchild of Kevin Ellen, Director of Web Experience at Croud. Say hello to him on Twitter (<a href=\"https://twitter.com/kevin_ellen_\" target=\"_blank\" rel=\"noopener\">@Kevin_Ellen_</a>)"
+      },{
+        "id":"technology-used",
+        "class": "listedContent",
+        "type": "ul",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"Technology used"
+        },
+        "content": "The technology used for this site.",
+        "items":[
+          "HTML",
+          "Cascade Style Sheets (CSS)",
+          "JavaScript",
+          "Cloudflare Workers"
+        ]
+      },{
+        "id":"acknowledgements",
+        "class": "listedContent",
+        "type": "ul",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"Acknowledgements"
+        },
+        "content": "Extending our thanks to these resources.",
+        "items":[
+          "Google Fonts: <a href=\"https://fonts.google.com/specimen/Inconsolata?sidebar.open=true&selection.family=Inconsolata:wght@400;700%7CMontserrat\" target=\"_blank\" rel=\"noopener\">Inconsolata &amp; Montserrat fonts</a>",
+          "FontAwesome: <a href=\"https://fontawesome.com/\" target=\"_blank\" rel=\"noopener\">Icons</a>"
+        ]
+      },{
+        "id":"useful-links",
+        "class": "listedContent",
+        "type": "ul",
+        "heading":{
+          "type":"h2",
+          "hidden":false,
+          "content":"Useful links"
+        },
+        "content": "Useful links that are connected to this project.",
+        "items":[
+          "Cloudflare: <a href=\"https://developers.cloudflare.com/workers/\" target=\"_blank\" rel=\"noopener\">Workers</a>",
+          "Google Developers: <a href=\"https://developers.google.com/web/ilt/pwa\" target=\"_blank\" rel=\"noopener\">Progressive Web Apps</a>",
+          "Mozilla Developer: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers\" target=\"_blank\" rel=\"noopener\">Web Workers</a>"
+        ]
+      }
+    ]
+  }
+}
